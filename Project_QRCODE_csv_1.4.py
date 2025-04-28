@@ -300,7 +300,7 @@ with tab1:
             ["Upload de Imagem (Selecionar câmera para tirar foto)", "Capturar com Câmera"]
         )
         
-        if upload_option == "Upload de Imagem":
+        if upload_option == "Upload de Imagem (Selecionar câmera para tirar foto)":
             uploaded_file = st.file_uploader("Carregue a imagem com QR Code", type=["jpg", "jpeg", "png"])
         else:
             camera_image = st.camera_input("Tire uma foto do QR Code")
