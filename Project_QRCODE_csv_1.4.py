@@ -297,10 +297,10 @@ with tab1:
         st.markdown("### Escolha como escanear")
         upload_option = st.radio(
             "Selecione o método:",
-            ["Upload de Imagem (Selecionar câmera para tirar foto)", "Capturar com Câmera"]
+            ["Capturar com Câmera (Habilite as permissões)", "Upload de Imagem"]
         )
         
-        if upload_option == "Upload de Imagem (Selecionar câmera para tirar foto)":
+        if upload_option == "Upload de Imagem":
             uploaded_file = st.file_uploader("Carregue a imagem com QR Code", type=["jpg", "jpeg", "png"])
         else:
             camera_image = st.camera_input("Tire uma foto do QR Code")
